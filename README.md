@@ -1,4 +1,5 @@
-# openssh
+## Installing OpenSSH
+
 Installing OpenSSH from the Settings UI on Windows Server 2019 or Windows 10 1809
 OpenSSH client and server are installable features of Windows 7, 10.
 
