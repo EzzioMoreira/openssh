@@ -1,6 +1,11 @@
-## Installing OpenSSH with PowerShell
-# To install OpenSSH using PowerShell, first launch PowerShell as an Administrator. 
+# Ezzio Moreira
+# enzziom@gmail.com
+# Installing OpenSSH with PowerShell
 
+# To install OpenSSH using PowerShell, first launch PowerShell as an Administrator and set script execution in windows policy
+
+Set-ExcutionPolicy Unrestricted
+ 
 If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrador"))
 
 {   
