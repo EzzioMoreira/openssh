@@ -1,7 +1,7 @@
 ## Installing OpenSSH with PowerShell
 # To install OpenSSH using PowerShell, first launch PowerShell as an Administrator. 
 
-If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
+If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrador"))
 
 {   
 $arguments = "& '" + $myinvocation.mycommand.definition + "'"
