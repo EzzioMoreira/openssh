@@ -1,7 +1,6 @@
 ## Installing OpenSSH
 
-Installing OpenSSH from the Settings UI on Windows Server 2019 or Windows 10 1809
-OpenSSH client and server are installable features of Windows 7, 10.
+Installing OpenSSH from the Settings UI on Windows Server 2016 - 2019, Windows 10 or Windows 7.
 
 The prerequisite for installing openssh: (powershell 5.0) for upgrade follows the Powershell upgrade link.
 
