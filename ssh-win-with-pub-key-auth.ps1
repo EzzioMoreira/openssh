@@ -24,5 +24,5 @@ Restart-Service sshd
 # 7. Create directory
 mkdir ~/.ssh/
 
-# 8. Copy key-rsa.pub  
+# 8. Copy key-rsa.pub from ~\.ssh\authorized_keys
 echo "ssh-rsa xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx chiquinho@powerpc" | Out-File ~\.ssh\authorized_keys -Encoding ascii
