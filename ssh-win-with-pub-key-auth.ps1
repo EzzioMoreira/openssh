@@ -2,7 +2,7 @@
 choco install powershell openssh -y
 
 # 2. Install service:
-. "C:\Program Files\OpenSSH\OpenSSH-Win64\install-sshd.ps1"
+.\'Program Files\OpenSSH-Win64\install-sshd.ps1' 
 
 # 3. Set firewall permissions:
 New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
