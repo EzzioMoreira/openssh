@@ -31,3 +31,7 @@ If(!(test-path $path))
 
 # 8. Copy key-rsa.pub from ~\.ssh\authorized_keys
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC0t0Y5qDs0Z3roWT6hfgzI+awWVYi+5Wu0XIXCawD2XFJz87MLS3Etg63TW5hG0j8FJq0uD2kMNrejJFF4P1o+z4I+ynIgvSth6VnevK1wXiAb3POq4t9Kc9IZwev3HHNfJgVSD4fJqKnu3CSNySrFbvyIkFUWeLK3H9lmqCOR0w== ubuntu@ec2-54-174-28-152.compute-1.amazonaws.com" | Out-File ~\.ssh\authorized_keys -Encoding ascii
+
+# 9. Powershell cmdlets to set powershell bash as default shell
+ New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -PropertyType String -Force
+ New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShellCommandOption -Value "/c" -PropertyType String -Force
