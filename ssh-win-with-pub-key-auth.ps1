@@ -2,7 +2,7 @@
 choco install powershell openssh -y
 
 # 2. Install service:
-cd C:\Program Files\OpenSSH-Win64\
+cd "C:\Program Files\OpenSSH-Win64\"
 .\install-sshd.ps1
 
 # 3. Set service startup
