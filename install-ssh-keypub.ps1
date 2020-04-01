@@ -20,6 +20,7 @@ New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH' -Enabled True -Direction I
 -replace '#PubkeyAuthentication yes','PubkeyAuthentication yes' `
 -replace '#PasswordAuthentication yes','PasswordAuthentication no' `
 -replace 'Match Group administrators','#Match Group administrators' `
+-replace '#StrictModes yes','StrictModes no' `
 -replace 'AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys','#AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys') | Set-Content -Path C:\ProgramData\ssh\sshd_config
 
 # 6. Restart service sshd
